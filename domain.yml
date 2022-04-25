@@ -1,0 +1,78 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - give_name
+  - ask_func_list
+  - thank
+  - ask_weather
+  - ask_lottery
+
+entities:
+ - cust_sex
+ - cust_name
+
+slots:
+ cust_sex:
+  type: text
+  influence_conversation: false
+  mappings:
+  - type: custom
+ cust_name:
+  type: text
+  influence_conversation: false
+  mappings:
+  - type: custom
+
+
+responses:
+  utter_greet:
+  - text: "Kính chào Quý khách! Quý khách vui lòng cho biết tên và giới tính để tiện xưng hô được không ah?"
+
+  utter_greet_with_name:
+  - text: "Dạ, em chào {cust_sex} {cust_name}. ABC Shop có thể giúp gì được {cust_sex} {cust_name} ạ?"
+
+  utter_cheer_up:
+  - text: "Vui lên nào, hãy xem tấm ảnh này:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Liệu tôi có giúp ích cho bạn?"
+
+  utter_happy:
+  - text: "Thật là toẹt vời!"
+  - text: "A ma ding! Gút dóp"
+
+  utter_goodbye:
+    - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
+    - text: "Kính chào tạm biệt và chúc quý khách một ngày tốt lành!"
+
+  utter_iamabot:
+    - text: "Em là Javis! Người ta hay gọi em là Bot thông minh xinh đẹp giỏi giang nhất vũ trụ ạ! Quý khách cần trợ giúp gì ạ?"
+    - text: "Dạ thưa. Em là Javis được lấy cảm hứng từ phim người sắt ạ!"
+
+  utter_func_list:
+    - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
+
+  utter_unclear:
+    - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+
+  utter_thank:
+    - text: "Cảm ơn quý khách quá khen ah!"
+    - text: "Dạ không có gì, đó là trách nhiệm của em mà!"
+
+
+actions:
+  - action_get_lottery
+  - action_get_weather
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

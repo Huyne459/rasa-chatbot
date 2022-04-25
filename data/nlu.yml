@@ -1,0 +1,186 @@
+version: "3.1"
+
+nlu:
+- intent: thank
+  examples: |
+    - chuẩn
+    - hay
+    - siêu
+    - tuyệt
+    - cám ơn
+    - thanks
+    - thank you
+    - ok
+    - cảm ơn em
+    - cảm ơn em nhiều nhé
+    - cảm ơn
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - này
+    - xin chào
+    - chào
+    - chào buổi sáng
+    - chào buổi tối
+    - chào buổi chiều
+    - ê
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt
+    - hẹn gặp lại
+    - gặp lại sau
+    - lúc khác gặp lại
+
+- intent: affirm
+  examples: |
+    - yes
+    - of course
+    - correct
+    - vâng
+    - được rồi
+    - tất nhiên
+    - nghe hay đó
+    - chính xác
+    - ok
+    - okay
+    - nghe ổn đó
+
+- intent: deny
+  examples: |
+    - hong
+    - không á
+    - không nhé
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - đừng như vậy chứ
+    - không đời nào
+    - hoàn toàn không
+    - có cái nịt
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - tuyệt vời
+    - rất tốt
+    - tuyệt
+    - đáng kinh ngạc
+    - hoàn hảo
+    - tôi cảm thấy rất tuyệt
+    - tôi rất khỏe
+    - tôi rất tốt
+
+- intent: mood_unhappy
+  examples: |
+    - super sad
+    - sad
+    - very sad
+    - not good
+    - so sad
+    - buồn ghê
+    - quá buồn
+    - quá chán
+    - tệ
+    - rất tệ
+    - tồi tệ
+    - kinh khủng
+    - không ổn lắm
+    - cực kỳ chán
+    - cực kỳ buồn
+    - tôi buồn
+    - huhu
+
+- intent: bot_challenge
+  examples: |
+    - Mày là bot à?
+    - Mày có phải là người không?
+    - Mình đang nói chuyện với bot à?
+    - Mày là robot à?
+    - Who are you?
+    - Mày là ai?
+
+- intent: give_name
+  examples: |
+    - [Anh] (cust_sex) tên là [Huy](cust_name)
+    - Mình tên là [Đạt](cust_name)
+    - Tôi tên là [Tuấn](cust_name)
+    - [Chị](cust_sex) là [Hằng](cust_name)
+    - [Em](cust_sex) là [Trang](cust_name)
+    - [Cô](cust_sex) [Vân](cust_name)
+    - [Chú](cust_sex) [Hùng](cust_name)
+
+- intent: ask_func_list
+  examples: |
+    - bạn có thể làm được những gì
+    - bạn giúp được gì nào
+    - chức năng của bạn là gì
+    - bạn có thể làm được mấy chức năng
+    - bạn giỏi nhất làm gì
+    - bạn có tư vấn giúp mình được không
+    - việc gì bạn làm được
+    - kể xem bạn làm được gì
+    - cho mình biết bạn làm được gì nhé
+    - bạn hữu dụng như thế nào
+    - bạn có ích trong những việc gì
+    - lĩnh vực gì bạn giỏi nhất
+    - mình tò mò về những việc bạn làm được
+    - chẳng biết bạn làm được gì
+    - bạn tệ nhất trong việc gì
+    - bạn biết được những lĩnh vực gì
+    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
+    - kể cho mình biết những việc bạn có thể làm được nhé
+    - nói cho mình về những việc bạn giúp được mình
+    - bạn giúp được mình gì nào
+    - bạn có thể làm gì
+    - em giúp được gì
+    - em làm được gì
+    - mày biết làm gì
+    - em biết làm gì
+    - bạn biết làm gì
+    - biết làm gì
+    - làm được gì 
+    - có làm được gì 
+    - có làm được trò gì 
+    - giúp giúp cái gì
+    - biết gì mà nói
+    - làm được gì
+    - giúp được gì
+    - mày làm được gì
+    - có biết gì
+
+- intent: ask_weather
+  examples: |
+    - Thời tiết hôm nay thế nào?
+    - Hôm nay trời sao ?
+    - Thời tiết bên ngoài ra sao ?
+    - Hôm nay trời nắng không ?
+    - Hôm nay trời nắng nhỉ 
+    - Hôm nay có mưa không ?
+    - Tự nhiên mưa thế
+    - Nắng quá
+
+- intent: ask_lottery
+  examples: |
+    - Cho anh xem kết quả đê
+    - Kết quả số xố hôm này thế nào
+    - Mày cho anh hỏi kết quả tý
+    - Có kết quả chưa
